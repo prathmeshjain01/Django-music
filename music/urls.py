@@ -17,10 +17,18 @@ from django.contrib import admin
 from django.urls import path , include
 from . import views
 from django.contrib.auth import views as auth_views
+from django.conf.urls.static import static
+
+from django.views.static import serve
+from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.dashboard,name='dashboard'),
     path('values',views.runcode,name='runcode'),
+    url(r'^media/(?P<path>.*)$', serve,{'document_root':   settings.MEDIA_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 
 ]
+
+
