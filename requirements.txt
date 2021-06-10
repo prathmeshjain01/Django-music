@@ -11,9 +11,9 @@ mido==1.2.9
 music21==5.7.2
 numba==0.53.1
 numpy
-tensorboard==2.2.2
+tensorboard
 tensorboard-plugin-wit==1.6.0.post3
-tensorflow==2.5.0
+tensorflow
 tensorflow-estimator==2.2.0
 termcolor==1.1.0
 terminado==0.8.3
