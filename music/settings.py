@@ -26,7 +26,7 @@ SECRET_KEY = 'g-qk^&kf9i_(_s1(df!!)&dy$j6w81%vdhozw5knnvvb+6=(&q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1',"deep-music.herokuapp.com"]
 
 
 # Application definition
